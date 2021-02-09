@@ -1,0 +1,637 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.header-bg {
+    background: rgba(51, 62, 69, 0.5);
+}
+
+.center-inner {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    
+    padding: 58px 0;
+}
+
+.logo {
+    float: left;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+}
+
+.e-letter {
+    color: #459dc3;
+}
+
+.nav-header {
+    float: right;
+}
+
+.nav-header a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 8px;
+    border: 2px solid transparent;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.nav-header a:hover {
+    border-color:  #459dc3;
+    text-decoration: none;
+    color:  #459dc3;
+}
+
+.head-section {
+    background: url(../img/HW4-blueasy-freebie.png);
+    background-size: cover;
+}
+
+.slider-info {
+    padding: 250px 0;
+    text-align: center;
+}
+.slider-title {
+    line-height: 65px;
+    color:white;
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 0;
+}
+
+.slider-title mark {
+    background-color: rgba(73, 83, 91, 0.8);    
+}
+
+.tutorial-wrapper {
+    padding-top: 150px;
+    padding-bottom: 70px;
+    background: #4bcaff;
+}
+
+.tutorial-title {
+    font-weight: bold;
+}
+
+.section-header {
+    margin-bottom: 80px;
+}
+
+.tutorial-title {
+    color: white;
+    font-size: 30px;    
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.coffe-box {
+    position: relative;
+    width: 260px;
+    padding-top: 60px;
+    color: white;
+    float: left;
+    margin-right: 40px;
+    font-size: 12px;
+}
+
+.coffe-box i {
+    position: absolute;
+    background: url(../img/coffee.png);
+    background-size: 50px;
+    width: 50px;
+    height: 55px;
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    display:inline-block;
+}
+
+.instant-box {
+    position: relative;
+    width: 260px;
+    padding-top: 60px;
+    color: white;
+    float: left;
+    margin-right: 40px;
+    font-size: 12px;
+}
+
+.instant-box i {
+    position: absolute;
+    background: url(../img/instant.png);
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    display:inline-block;
+}
+
+.serious-box {
+    position: relative;
+    width: 260px;
+    padding-top: 60px;
+    color: white;
+    float: left;
+    margin-right: 40px;
+    font-size: 12px;    
+}
+
+.serious-box i {
+    position: absolute;
+    background: url(../img/serious.png);
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    display:inline-block;
+}
+
+.frame-box {
+    position: relative;
+    width: 260px;
+    padding-top: 60px;
+    color: white;
+    float: left;
+    font-size: 12px;
+}
+
+.frame-box i {
+    position: absolute;
+    background: url(../img/frame.png);
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    display:inline-block;
+}
+
+.section-title{
+    color: black;
+    font-size: 30px;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.section-title:before {
+    content: '';
+    position: absolute;
+    background: black;
+    height: 2px;
+    width: 45px;
+    bottom: 0;
+    left: 0;
+} 
+
+.portfolio-header .section-header {
+    float: left;
+}
+
+.portfolio-nav-cont {
+    float: right;    
+}
+
+.portfolio-nav a:first-child {
+    margin-right: 30px;
+}
+
+.portfolio-nav a {  
+    display: inline-block;  
+    padding: 15px 10px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    color:#3e4a51;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.portfolio-nav a:hover{
+    border-color:  #459dc3;
+    text-decoration: none;
+    color:  #459dc3;
+}
+
+.portfolio-section {
+    padding: 70px 0px;
+}
+
+.portfolio-item {
+    position: relative; 
+    display: inline-block;
+    margin-right: 19px; 
+    margin-bottom: 19px;    
+}
+
+.portfolio-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(73, 83, 91, 0.8) ;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.portfolio-item:hover .portfolio-item-inner {
+    opacity: 1;
+}
+
+.portfolio-item:hover:before {
+    opacity: 1;
+}
+
+.portfolio-item-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.plus {    
+    position: relative; 
+    background: white;
+    width: 2px;
+    height: 33px;
+}
+    
+.plus:after {
+    content: '';
+    position: absolute; 
+    background: white;
+    width: 33px;
+    height: 2px;
+    left: -16px;
+    top: 16px;    
+}
+
+.just-default-bg {
+    background: #515f67;
+    padding: 80px 0px;
+}
+
+.just-default{
+   float: left;
+   color: white;
+   margin-right: 80px;
+}
+
+.section-title-white{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.section-title-white:before {
+    content: '';
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 45px;
+    bottom: 0;
+    left: 0;
+}
+
+.just-default-text {
+    width: 470px;
+    
+}
+
+.just-default-text p {
+    margin-top: 30px ;
+}
+
+.just-default-text a {
+    display: inline-block;
+    padding: 10px 20px; 
+    margin-top: 10px;  
+    border: 2px solid #3e4a51;
+    color:#3e4a51;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.just-default-text a:hover {
+    border-color:  #459dc3;
+    text-decoration: none;
+    color:  #459dc3;
+}
+
+.twitter-section {
+    background: #4bcaff;
+    padding: 80px 0px;    
+}
+
+.twitter-section p {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.twitter-link {
+    color: white;
+    font-weight:bold ;
+}
+
+.twitter-inner {
+    float: left;
+}
+
+.twitter-logo-inner {
+    position: relative;
+    float: right;
+    height: 30px;
+    width: 30px;
+}
+
+.twitter-logo-inner:before {    
+    content: '';
+    position: absolute;
+    background: url(../img/icon-twitter.png)no-repeat;
+    height: 25px;
+    width: 25px; 
+    top: 0;  
+    right: 0;    
+}
+
+.whois-section {
+background: url(../img/whois.png);
+background-size: cover;
+padding: 80px 0px 100px;
+}
+
+.whois-main {
+    color: white;
+    font-size: 14px;
+}
+
+.fist-column {
+    width: 550px;
+    float: left;
+    margin-right: 30px;
+}
+
+.fist-column p {
+    margin-bottom: 35px;
+    line-height: 20px;
+}
+
+.second-column {
+    width: 550px;
+    float: right;
+    line-height: 20px;
+}
+
+.social-icons {
+    display: inline-block;
+    margin-top: 35px;
+}
+
+.icon-twitter {
+    border: 2px solid white;   
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.icon-twitter:before {    
+    content: '';
+    position: absolute;
+    background: url(../img/icon-twitter.png)no-repeat;
+    height: 30px;
+    width: 30px; 
+    top: calc(50% - 15px);  
+    right: calc(50% - 15px);
+}
+
+.icon-google-plus {
+    border: 2px solid white;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.icon-google-plus:before {    
+    content: '';
+    position: absolute;
+    background: url(../img/icon-google-plus.png)no-repeat;
+    height: 30px;
+    width: 30px; 
+    top: calc(50% - 15px);  
+    right: calc(50% - 15px);
+}
+
+.icon-basket {
+    border: 2px solid white;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.icon-basket:before {    
+    content: '';
+    position: absolute;
+    background: url(../img/icon-dribbble.png)no-repeat;
+    height: 30px;
+    width: 30px; 
+    top: calc(50% - 15px);  
+    right: calc(50% - 15px);
+}
+
+.icon-coffee {
+    border: 2px solid white;
+    width: 60px;
+    height: 60px;
+    float: right;
+    position: relative;
+}
+
+.icon-coffee:before {    
+    content: '';
+    position: absolute;
+    background: url(../img/icon-coffee.png)no-repeat;
+    height: 30px;
+    width: 30px; 
+    top: calc(50% - 15px);  
+    right: calc(50% - 15px);
+}
+
+.testimonials-section {
+    background: white;
+    padding: 80px 0px;    
+}
+
+.testimonials-section-inner {
+    float: left;
+}
+
+.testimonials-logo-quotes {
+    float: right;
+    position: relative;
+}
+
+.testimonials-section p {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color:#515f67 ;
+}
+
+.walter-white {
+    color: #4bcaff;
+    font-size: 14px;
+}
+
+.section-title-grey{
+    color: #515f67;
+    font-size: 30px;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 10px;    
+}
+
+.section-title-grey:before {
+    content: '';
+    position: absolute;
+    background: #515f67;
+    height: 2px;
+    width: 45px;
+    bottom: 0;
+    left: 0;
+}
+
+.testimonials-logo-quotes:after {
+    content: '';
+    position: absolute;
+    background: url(../img/quotes.png)no-repeat;
+    height: 40px;
+    width: 40px; 
+   
+}
+
+.contact-section {
+    background: url(../img/contact-bg.png);
+    background-size: cover;
+    padding: 80px 0px 35px;
+
+}
+
+
+.form p {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  
+}
+
+.form input {
+    background: none;
+    border: 2px solid white;
+    margin-top: 5px;
+
+}
+
+.form button {
+    background: #4bcaff;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 24px 150px;
+    margin-top: 30px;
+}
+
+.inputtext {
+    width: 470px;
+    height: 60px;
+}
+
+.inputmessage {
+    height: 210px;
+    width: 1170px;
+}
+
+.contact-text {
+    position: absolute;    
+    top: 15px;
+    left: 600px;
+    line-height: 20px;
+    font-size: 14px;
+    color: white;    
+}
+
+.contact-section-box {
+    position: relative;
+}
+
+.contact-text p {
+    margin-bottom: 40px;
+}
+
+.footer {
+    background: #353f47;
+    padding: 80px 0px;
+}
+
+.footer-nav {
+    float: left;
+    color: #434f57;
+    text-transform: uppercase;
+    font-size: 12px; 
+
+}
+
+.footer-nav-link {
+    color: #434f57;
+    margin: 0px 10px;
+}
+
+.footer-span {
+    float: right;
+    color: #434f57;
+}
